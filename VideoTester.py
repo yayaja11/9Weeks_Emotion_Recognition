@@ -15,6 +15,11 @@ face_haar_cascade = cv2.CascadeClassifier(cv2.data.haarcascades +'haarcascade_fr
 
 cap=cv2.VideoCapture(0)
 
+# # 파일 초기화
+# f = open('./emotion_log.txt', 'w')
+# f.write('')
+# f.close()
+
 while True:
     ret,test_img=cap.read()# captures frame and returns boolean value and captured image
     if not ret:
@@ -33,7 +38,10 @@ while True:
         img_pixels /= 255
 
         predictions = model.predict(img_pixels)
-
+#         f = open('./emotion_log.txt', 'a')
+#         f.write(predictions)
+#          f.close()
+#         np.savetxt('emotion_log.txt', predictions, fmt='%.6e', delimiter=' ',newline=' ')
         #find max indexed array
         max_index = np.argmax(predictions[0])
 
