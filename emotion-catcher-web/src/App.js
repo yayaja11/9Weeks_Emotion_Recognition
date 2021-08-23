@@ -2,7 +2,7 @@ import "./App.css";
 import MainPageComponent from "./main";
 import EmotionPage from "./emotion";
 import AccountPage from "./account";
-import TestVideo from "./emotion/test_video";
+import VideoEmotionPage from "./emotion/video_emotion";
 import { Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
@@ -44,9 +44,13 @@ function App() {
           <Route exact={true} path="/emotion">
             <EmotionPage />
           </Route>
-          <Route path="/testvideo">
-            <TestVideo />
-          </Route>
+          <Route
+            exact={true}
+            path="/emotion/video/:id"
+            component={VideoEmotionPage}
+          />
+          {/* <VideoEmotionPage /> */}
+          {/* </Route> */}
         </Switch>
       </div>
       {/* Footer */}
