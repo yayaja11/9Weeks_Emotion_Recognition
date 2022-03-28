@@ -51,3 +51,36 @@
     - 서버로 얼굴데이터를 보내지 않고 사용자의 클라이언트에서 감정 분석 수행
     - 분석된 데이터를 서버에 전송
     - ![image](https://user-images.githubusercontent.com/19571027/160350661-54d4d00e-18bb-48f4-a5bc-73f4212452d0.png)
+
+##### 모델 이슈
+- 한국인 감정 얼굴 데이터
+   - -> 양재 AI 허브에서 수집
+- 얼굴을 인식하는데 Xception이 탁월한 성능을 보임. 하지만 네트워크의 크기가 커, 무거움
+- 유저의 로컬환경에서 모델이 진행되므로 가벼운 모델이 이상적
+- Ver 1.
+   - -> Mini Exception 사용
+   - ![image](https://user-images.githubusercontent.com/19571027/160360813-d05acb99-5a78-43e4-896f-8c61c39fffc5.png)
+
+- Ver 2.
+   - 사용자 컴퓨터 환경에 따른 두번째 버전
+   - -> Face Expression Model
+   - ![image](https://user-images.githubusercontent.com/19571027/160361674-1dc9c284-fe02-40cd-98b7-55eb6f80d77f.png)
+
+##### 결과
+
+1. 메인페이지
+ ![image](https://user-images.githubusercontent.com/19571027/160361948-611c1ace-6847-4957-a90a-c16a2374a764.png)
+
+2. 영상 콘텐츠 제공 페이지 
+![image](https://user-images.githubusercontent.com/19571027/160362030-becb3f66-6562-45e0-b9de-9cc8a7d283f3.png)
+
+3. 감정 분석 페이지
+![image](https://user-images.githubusercontent.com/19571027/160362087-4fede351-1dbe-41cb-b3dd-ceaae2353614.png)
+
+4. 감정 분석 결과 페이지
+![image](https://user-images.githubusercontent.com/19571027/160362481-ae781ff5-ae58-4df3-93d9-85b3ac1626d6.png)
+
+
+
+
+
