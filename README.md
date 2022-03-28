@@ -34,18 +34,17 @@
 - 감성적인 컨텐츠가 마케팅에 효과가 있을까?
 - ![image](https://user-images.githubusercontent.com/19571027/160348486-3a29dd8c-e68a-4dec-8875-d7810ea6ce8a.png)
     - Pringle, Hamish. Brand immortality: How brands can live long and prosper. Kogan Page Publishers, 2008.
-  - 약 15% 광고 효과 증대를 기대할 수 있음
+- 약 15% 광고 효과 증대를 기대할 수 있음
 
-### 환경 설정 및 구조
+### 환경 설정
 
-##### 환경 설정
-- 윈도우 10
+##### 사용 도구
 - React
 - Jupyter
 - AmazonAWS
 - JavaScript
 
-##### 환경 구조
+##### 구조
 - 이슈
     - 사람의 얼굴 데이터는 민감한 정보로 취급됨
     - 서버로 얼굴데이터를 보내지 않고 사용자의 클라이언트에서 감정 분석 수행
@@ -55,8 +54,8 @@
 ##### 모델 이슈
 - 한국인 감정 얼굴 데이터
    - -> 양재 AI 허브에서 수집
-- 얼굴을 인식하는데 Xception이 탁월한 성능을 보임. 하지만 네트워크의 크기가 커, 무거움
-- 유저의 로컬환경에서 모델이 진행되므로 가벼운 모델이 이상적
+- 얼굴을 인식하는데 Xception이 탁월한 성능을 보임.
+- 유저의 로컬환경에서 모델이 진행되므로 보다 가벼운 모델이 이상적
 - Ver 1.
    - -> Mini Exception 사용
    - ![image](https://user-images.githubusercontent.com/19571027/160360813-d05acb99-5a78-43e4-896f-8c61c39fffc5.png)
