@@ -41,6 +41,7 @@
 ##### 사용 도구
 - React
 - Jupyter
+- Tensorflow.JS
 - AmazonAWS
 - JavaScript
 
