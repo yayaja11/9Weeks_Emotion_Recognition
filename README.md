@@ -58,10 +58,13 @@
 - 유저의 로컬환경에서 모델이 진행되므로 보다 가벼운 모델이 이상적
 - Ver 1.
    - -> Mini Exception 사용
+   - -> 정확도 약70% (기존 Xception과 유사) 
+   - -> Training 시간 1/5로 감소
    - ![image](https://user-images.githubusercontent.com/19571027/160360813-d05acb99-5a78-43e4-896f-8c61c39fffc5.png)
 
 - Ver 2.
    - 사용자 컴퓨터 환경에 따른 두번째 버전
+   - -> 가장 정확한 모델
    - -> Face Expression Model
    - ![image](https://user-images.githubusercontent.com/19571027/160361674-1dc9c284-fe02-40cd-98b7-55eb6f80d77f.png)
 
